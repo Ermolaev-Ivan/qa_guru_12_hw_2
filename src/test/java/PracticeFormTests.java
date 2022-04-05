@@ -24,13 +24,12 @@ public class PracticeFormTests {
         $("label[for='gender-radio-1']").click();
         $("#userNumber").setValue("9998887766");
         $("#subjectsInput").setValue("Physics").pressEnter();
-        $("#userNumber").setValue("9998887766");
 
 // Date of Birth
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOptionContainingText("November");
         $(".react-datepicker__year-select").selectOptionContainingText("1998");
-        $$("div[role='option']").findBy(Condition.text("19")).click();
+        $(".react-datepicker__day--019" ).click();
 
 // Checkboxes
         $(byText("Sports")).click();
